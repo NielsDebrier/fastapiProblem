@@ -3,11 +3,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 count = 0
 
-app = FastAPI(
-    title="Date api",
-    description="The date api for TVH mail analysis.",
-    version="0.2.5",
-)
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
